@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class StringReversal {
+	
+	// This basicly reverse entered word and returns it back
+	
+
+	public static void main(String[] args) {
+
+		System.out.println("Type word to translate:\n");
+
+		Scanner input = new Scanner(System.in);
+
+		String word = input.nextLine();
+
+		String[] array = word.split("");
+
+		System.out.println("\nTranslated word:\n");
+
+		for (int i = array.length - 1; i >= 0; i--) {
+
+			System.out.print(array[i]);
+
+			input.close();
+		}
+
+	}
+
+}
